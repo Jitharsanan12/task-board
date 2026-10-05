@@ -1,0 +1,92 @@
+.board {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.board h1 {
+  margin: 0 0 0.25rem;
+}
+
+.hint {
+  margin: 0 0 1.5rem;
+  color: #5b6676;
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.section {
+  background: white;
+  border: 1px solid #d5dbe3;
+  border-top: 4px solid #475467;
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: 200px;
+}
+
+.section-high { border-top-color: #b42318; }
+.section-medium { border-top-color: #b54708; }
+.section-low { border-top-color: #1f7a5a; }
+
+.section-drag-over {
+  background: #f5f8fc;
+  outline: 2px dashed #475467;
+}
+
+.section h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+}
+
+.empty {
+  color: #5b6676;
+  font-size: 0.9rem;
+}
+
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.task {
+  border: 1px solid #d5dbe3;
+  border-radius: 6px;
+  padding: 0.6rem;
+  margin-bottom: 0.5rem;
+  background: #fafbfc;
+  cursor: grab;
+}
+
+.task:active {
+  cursor: grabbing;
+}
+
+.task-title {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.task button {
+  font-size: 0.8rem;
+  margin-right: 0.3rem;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid #c3cad4;
+  border-radius: 4px;
+  background: white;
+  color: #1c2430;
+  cursor: pointer;
+}
+
+.task button:hover {
+  background: #eef1f5;
+}
+
+.task button:focus-visible {
+  outline: 2px solid #1c2430;
+  outline-offset: 2px;
+}
